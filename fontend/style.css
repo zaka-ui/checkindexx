@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.content {
+  margin-top: 20px;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-items: start;
+}
+.title-container img {
+  height: 50px;
+}
+.title {
+  color: yellow;
+  display: block;
+  font-size: 35px;
+}
+
+.form {
+  width: 500px;
+}
+form input {
+  width: 100%;
+  border-radius: 15px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  background-color: yellow;
+  cursor: pointer;
+  transition: 300ms ease-in;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.submit-btn:hover {
+  letter-spacing: 3px;
+}
+
+.desactivate {
+  display: none;
+}
+
+.response {
+  margin-top: 20px;
+}
+
+.response ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  width: 100%;
+  height: 30px;
+  list-style: none;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.response ul li span {
+  padding-left: 10px;
+}
+.nonIndexed {
+  margin-top: 30px;
+}
+h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 25px;
+}
+
+.button-container {
+  margin-top: 5px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.button-container button {
+  color: yellow;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 300ms ease-in;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  transition: ease-in-out 0.5s;
+}
+.button-container button:hover {
+  letter-spacing: 1px;
+}
+.dataIsIndexed {
+  color: white;
+}
+
+.display {
+  background: rgb(0, 0, 0);
+  opacity: 70%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+.pop-up {
+  display: none;
+  
+}
+.pop-up-content {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200px;
+  width: 600px;
+  background-color: yellow;
+  border-radius: 20px;
+  z-index: 12; /* Ensure this creates a stacking context */
+  overflow: hidden; /* Optional: Ensures content doesn't overflow */
+  
+ 
+}
+.close-btn {
+  position: relative;
+  left: 550px;
+  top: 10px; /* Changed from margin-top to top */
+  z-index: 15;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  /* Higher than .pop-up-content */
+}
+.pop-up-message {
+  overflow-y:scroll ;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 20px;
+  color: red;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+
+.select-all{
+  background-color: transparent;
+  color: yellow;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 15px;
+}
